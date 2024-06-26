@@ -1,0 +1,25 @@
+baseURL = 'https://pgpcn.github.io/'
+languageCode = 'zh-cn'
+title = '加密工具介绍'
+theme = 'hugo-PaperMod'
+
+relativeURLs = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "pgp-intro"
+    name = "PGP 加密"
+    url = "/pgp-intro/"
+    weight = 10
+  [[menu.main]]
+    identifier = "pgp-site"
+    parent = "pgp-intro"
+    name = "PGP 加密"
+    url = "https://pgpcn.github.io/pgp/"
+    weight = 20

@@ -1,0 +1,104 @@
+theme: PaperMod
+languageCode: zh-cn
+
+baseURL: "https://pgpcn.github.io/"
+title: 一些网络工具的介绍
+
+enableInlineShortcodes: true #允许内联短码
+enableEmoji: true # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
+hasCJKLanguage: true # 自动检测是否包含 中文日文韩文 如果文章中使用了很多中文引号的话可以开启
+
+buildDrafts: true
+buildFuture: true
+buildExpired: true
+paginate: 15    # 每页显示的文章数
+
+minify:
+    disableXML: true
+    # minifyOutput: true
+relativeURLs: true
+permalinks: #浏览器链接显示方式
+  post: "/:title/"
+  # post: "/:year/:month/:day/:title/"
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 网络工具的介绍
+  description: "一些网络工具的介绍和安装配置"
+  keywords: [pgp, tools, gfw, china]
+
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  VisitCount: true
+  displayFullLangName: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  hideFooter: false # 隐藏页脚
+  ShowLastMod: false #显示文章更新时间
+  ShowToc: false # 显示目录
+  TocOpen: false # 自动展开目录
+
+  profileMode:
+    enabled: false
+    title: "<Title>" # optional default will be site title
+    subtitle: "This is subtitle"
+    # imageUrl: "<image link>" # optional
+    # imageTitle: "<title of image as alt>" # optional
+    # imageWidth: 120 # custom size
+    # imageHeight: 120 # custom size
+    buttons:
+      - name: Archive
+        url: "/archive"
+      - name: Github
+        url: "https://github.com/"
+
+#  analytics:
+#    google:
+#      SiteVerificationTag: "XYZabc"
+#    bing:
+#      SiteVerificationTag: "XYZabc"
+#    yandex:
+#      SiteVerificationTag: "XYZabc"
+
+#  editPost:
+#    URL: "https://github.com/<path_to_repo>/content"
+#    Text: "Suggest Changes" # edit text
+#    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+#  fuseOpts:
+#    isCaseSensitive: false
+#    shouldSort: true
+#    location: 0
+#    distance: 1000
+#    threshold: 0.4
+#    minMatchCharLength: 0
+#    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+#    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
+    - identifier: about
+      name: 关于本站
+      url: /about/
+      weight: 20
